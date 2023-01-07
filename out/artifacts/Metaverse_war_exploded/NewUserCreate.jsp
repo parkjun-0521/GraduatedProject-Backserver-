@@ -18,12 +18,14 @@
     PreparedStatement pstmt = null;
 
     try{
-        //String url = "jdbc:mysql://localhost:3306/metaverse";
-        //String user = "root";
-        //String userpw = "qkrwns@0521";
-        String url = "jdbc:mysql://121.164.87.241:1128/project";
-        String user = "unity_con";
-        String userpw = "1234";
+
+        String url = "jdbc:mysql://localhost:3306/metaverse";
+        String user = "root";
+        String userpw = "qkrwns@0521";
+
+        //String url = "jdbc:mysql://121.164.87.241:1128/project";
+        //String user = "unity_con";
+        //String userpw = "1234";
         Class.forName("com.mysql.cj.jdbc.Driver");
         conn=DriverManager.getConnection(url,user,userpw);
         out.println("제대로 연결되었습니다.");
@@ -42,7 +44,6 @@
         out.print(id + ",");
         out.print(pwd + ",");
         out.print(nick);
-
 
     }catch(Exception e){
         e.printStackTrace();
