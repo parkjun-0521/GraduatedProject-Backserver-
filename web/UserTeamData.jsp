@@ -7,6 +7,7 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import = "java.sql.*" %>
+<%@include file="/DBConect.jsp" %>
 <%
   String id = request.getParameter("id");
 
@@ -16,25 +17,16 @@
 
   try{
 
-    String url = "jdbc:mysql://localhost:3306/metaverse";
-    String user = "root";
-    String userpw = "qkrwns@0521";
-
-    //String url = "jdbc:mysql://121.164.87.241:1128/project";
-    //String user = "unity_con";
-    //String userpw = "1234";
-
     Class.forName("com.mysql.cj.jdbc.Driver");
     conn=DriverManager.getConnection(url,user,userpw);
 
-    String sql = "select * from user_team where user_id = ? and team_admin = 0";
+    String sql = "select * from team_user_data where user_id = ? and is_admin = 0";
     pstmt = conn.prepareStatement(sql);
     pstmt.setString(1,id);
 
     rs = pstmt.executeQuery();
 
     while(rs.next()){
-
       String TeamName = rs.getString("team_name");
       out.print(TeamName + ",");
     }

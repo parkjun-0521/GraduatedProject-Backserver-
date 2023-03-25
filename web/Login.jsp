@@ -7,6 +7,7 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import = "java.sql.*" %>
+<%@include file="/DBConect.jsp" %>
 <%
     String id = request.getParameter("id");
     String pw = request.getParameter("pw");
@@ -16,14 +17,6 @@
     ResultSet rs = null;
 
     try{
-
-        String url = "jdbc:mysql://localhost:3306/metaverse";
-        String user = "root";
-        String userpw = "qkrwns@0521";
-
-        //String url = "jdbc:mysql://121.164.87.241:1128/project";
-        //String user = "unity_con";
-        //String userpw = "1234";
 
         Class.forName("com.mysql.cj.jdbc.Driver");
         conn=DriverManager.getConnection(url,user,userpw);
@@ -36,10 +29,10 @@
         rs = pstmt.executeQuery();
 
         if(rs.next()){
-            String isql = "update user_data set login_state = 1 where user_id = ?";
-            pstmt = conn.prepareStatement(isql);
-            pstmt.setString(1,id);
-            pstmt.executeUpdate();
+            //String isql = "update user_data set login_state = 1 where user_id = ?";
+            //pstmt = conn.prepareStatement(isql);
+            //pstmt.setString(1,id);
+            //pstmt.executeUpdate();
 
             String adminUser = rs.getString("user_admin");
             out.println(adminUser);

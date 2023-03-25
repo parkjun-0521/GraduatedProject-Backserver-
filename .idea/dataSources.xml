@@ -8,15 +8,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="meta" uuid="0d2b9c1f-d958-438c-83cb-c7bc8132f412">
+    <data-source source="LOCAL" name="@14.56.112.146" uuid="d93da41d-0534-45c4-88da-70163736411c">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://121.164.87.241:1128</jdbc-url>
+      <jdbc-url>jdbc:mysql://14.56.112.146:1128</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
-      <driver-properties>
-        <property name="serverTimezone" value="Asia/Seoul" />
-      </driver-properties>
     </data-source>
   </component>
 </project>
