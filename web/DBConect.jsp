@@ -11,7 +11,7 @@
         String user = "root";
         String userpw = "qkrwns@0521";
 
-        //String url = "jdbc:mysql://14.56.98.148:1128/project";
+        //String url = "jdbc:mysql://125.142.241.27:1128/project";
         //String user = "unity_con";
         //String userpw = "1234";
 %>
