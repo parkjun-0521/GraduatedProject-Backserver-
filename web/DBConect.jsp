@@ -7,11 +7,11 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-        String url = "jdbc:mysql://localhost:3306/metaverse";
-        String user = "root";
-        String userpw = "qkrwns@0521";
+        //String url = "jdbc:mysql://localhost:3306/metaverse";
+        //String user = "root";
+        //String userpw = "qkrwns@0521";
 
-        //String url = "jdbc:mysql://125.142.241.27:1128/project";
-        //String user = "unity_con";
-        //String userpw = "1234";
+        String url = "jdbc:mysql://14.56.184.130:1128/project";
+        String user = "unity_con";
+        String userpw = "1234";
 %>
