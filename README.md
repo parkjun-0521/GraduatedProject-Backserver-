@@ -10,7 +10,7 @@
 
 # 웹 서버 
 
-  - Apache Tomcat
+  - Apache Tomcat 
 
 ## 기능 설명 
 
@@ -20,4 +20,20 @@
 
   ### Login.jsp
   - 유니티 로그인 페이지의 정보를 받아온다.
-  - DB에 있는 정보와 비교하여 로그인 여부를 판단. 
+  - DB에 있는 정보와 비교하여 로그인 여부를 판단.
+    
+ChatLog.jsp
+
+ItemInput.jsp
+
+Logout.jsp
+
+NewUserCreate.jsp
+
+TeamAllData.jsp
+
+TeamData.jsp
+
+UserData.jsp
+
+UserTeamData.jsp
