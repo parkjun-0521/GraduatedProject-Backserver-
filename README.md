@@ -14,6 +14,9 @@
 
 ## 기능 설명 
 
-  ### DBConect.jsp
+  ### DBConect.jsp ( Ignore 파일 )
   - 외부 DB와 연결하기 기초적인 작업
+  - URL과 DB 로그인 정보 
+
+  ### Login.jsp
   - 
